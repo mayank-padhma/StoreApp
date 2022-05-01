@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainFragments.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        android:background="#0000FFFF">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:title="Hi, John!"
+            app:navigationIcon="@drawable/menuicon">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        android:layout_marginBottom="15dp"
+        app:queryHint="Search"
+        android:background="@drawable/searchback"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommendation"
+            android:textColor="#647039"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="8sp"
+                android:layout_height="8sp"
+                android:src="@drawable/dot"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Tea"
+            android:layout_marginRight="15dp"
+            android:textColor="#647039"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Tea"
+            android:layout_marginRight="15dp"
+            android:textColor="#647039"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="10dp"
+        android:scrollbarTrackHorizontal="@drawable/scrolltrack"
+        android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarThumbHorizontal="@drawable/scroll_thumb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lemonTea"
+            android:layout_width="122dp"
+            android:layout_height="158dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#EBFFA2"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:src="@drawable/bookmark"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="102dp"
+                android:src="@drawable/lemontea"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemon Tea"
+                android:textColor="#647039"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5dp"/>
+
+        </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+            android:layout_width="122dp"
+            android:layout_height="158dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#EBFFA2"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:src="@drawable/bookmark"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="80dp"
+                android:src="@drawable/greentea"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemon Tea"
+                android:textColor="#647039"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5dp"/>
+
+        </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+            android:layout_width="122dp"
+            android:layout_height="158dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#EBFFA2"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:src="@drawable/bookmark"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="80dp"
+                android:src="@drawable/greentea"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemon Tea"
+                android:textColor="#647039"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+        </FrameLayout>
+
+
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Will Buy"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="84dp"
+            android:layout_height="76dp"
+            android:src="@drawable/item1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bubble Tea"
+                android:textColor="#647039"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Good day time"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="$56.99"
+            android:textColor="#647039"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout> <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:src="@drawable/item2" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purple Tea"
+                android:textColor="#647039"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Happy Hours"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="$25.99"
+            android:textColor="#647039"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

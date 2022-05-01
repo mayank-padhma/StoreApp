@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cardview" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="15dp"
+       android:layout_alignParentBottom="true"
+        app:cardCornerRadius="25dp"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="318dp"
+            android:layout_height="56dp"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorColor="#A6CE16"
+            app:tabIconTint="#a0a0a0"
+            android:layout_gravity="center"
+            app:tabIndicator="@drawable/selectedback">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/item1"
+                android:layout_width="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="49dp"
+                android:icon="@drawable/shop"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/item2"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:icon="@drawable/home"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/item3"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:icon="@drawable/cartvector"/>
+
+        </com.google.android.material.tabs.TabLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:translationX="-1000dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/menuback" />
+
+        <ImageView
+            android:id="@+id/dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/dp"
+            android:layout_above="@+id/edit"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Tim"
+            android:textSize="20sp"
+            android:textColor="#47505A"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignBottom="@+id/dp"
+            android:layout_marginBottom="15dp"
+            android:text="Edit Profile"
+            android:textColor="#47505A"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/backNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#0000"
+            android:src="@drawable/backmen" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/dp"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:background="#454545"/>
+        <LinearLayout
+            android:layout_below="@+id/view"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Categories"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:text="Your Orders"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Wishlist"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:text="FAQs"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Log Out"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
